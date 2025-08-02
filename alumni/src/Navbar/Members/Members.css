@@ -1,0 +1,146 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.members-page {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Heading styles */
+h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Form styles */
+.register-container,
+.dashboard-container {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea,
+.register-form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.register-form button,
+.back-btn {
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.register-form button:hover,
+.back-btn:hover {
+  background-color: #003366;
+}
+
+/* List of members */
+.members-list ul,
+.member-list-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.members-list li,
+.member-list-container li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.members-list li:hover,
+.member-list-container li:hover {
+  background-color: #e9ecef;
+  transform: scale(1.02);
+}
+
+/* Dashboard container */
+.dashboard-container p {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #003366;
+}
+
+.dashboard-container b {
+  color: #003366;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .members-page {
+    padding: 10px;
+  }
+
+  .register-form input,
+  .register-form select,
+  .register-form textarea,
+  .register-form button {
+    font-size: 12px;
+  }
+
+  .dashboard-container p {
+    font-size: 12px;
+  }
+}
+.profile-photo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  border: 2px solid #ccc; /* Optional: Adds a border around the photo */
+}

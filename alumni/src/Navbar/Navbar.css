@@ -1,0 +1,186 @@
+/* Navbar.css */
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;  /* Reduced padding to decrease height */
+  background-color: white;
+  color: black;
+  height: 50px;  /* You can adjust this to further decrease the height */
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.text-container h1 {
+  font-size: 30px;
+  margin: 0;
+  
+}
+
+.text-container h2 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Navbar Styles */
+.nav {
+  background-color: #003366;
+  padding: 7px ;
+  height: 47px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  color: #f39c12;
+}
+
+/* Search and Toggle Button */
+.search-and-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.toggle-sidebar-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #003366;
+  color: white;
+  padding-top: 60px;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  color: #f39c12;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+} .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.text-container h1, .text-container h2 {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.extra-logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  width: 200px;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background: #333;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+

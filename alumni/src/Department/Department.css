@@ -1,0 +1,109 @@
+
+
+/* CSS Styling */
+/* Add the following CSS styles to your stylesheet */
+
+/* Department Card Styling */
+.department-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Image Styling */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px; /* Adjust position */
+}
+
+.department-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes the image round */
+  border: 3px solid #f4f4f4; /* Optional border around the image */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for better look */
+}
+
+/* Department Content */
+.department-content {
+  padding: 20px;
+}
+
+.department-content h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.department-content h2 {
+  font-size: 22px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.department-content section {
+  margin-bottom: 20px;
+}
+
+.department-content h3 {
+  font-size: 20px;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.department-content p {
+  font-size: 16px;
+  color: #555;
+}
+
+.department-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.department-content ul li {
+  font-size: 16px;
+  color: #555;
+}
+
+.department-content section h3 {
+  font-weight: bold;
+  color: #003366;
+}
+
+.department-content section p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .department-card {
+    width: 100%;
+    margin: 15px;
+  }
+
+  .department-content h1 {
+    font-size: 24px;
+  }
+
+  .department-content h2 {
+    font-size: 18px;
+  }
+
+  .department-content section h3 {
+    font-size: 18px;
+  }
+
+  .department-content section p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,123 @@
+/* Gallery.css */
+
+.gallery-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .gallery-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .gallery-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover .gallery-img {
+    transform: scale(1.1);
+  }
+  
+  .gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .gallery-item:hover .gallery-overlay {
+    opacity: 1;
+  }
+  
+  .gallery-text {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  .modal-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .modal-title {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .close-modal {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease;
+  }
+  
+  .close-modal:hover {
+    background: #0056b3;
+  }
+  .footer {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }

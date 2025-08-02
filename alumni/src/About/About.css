@@ -1,0 +1,54 @@
+.home-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.home-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.introduction, .features, .objectives, .how-it-works, .testimonials {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feature-card, .testimonial-card {
+    background-color: #f7d5ee;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.feature-card h3, .testimonial-card strong {
+    color: #333;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+.footer {
+    margin-top: 60px;
+    padding: 20px;
+    background-color:white;
+    color: balck;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
